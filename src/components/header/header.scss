@@ -1,0 +1,97 @@
+.header {
+    &__items {
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        &__setting {
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 33.89px;
+            margin-right: 500px;
+        }
+        &__input {
+            margin-right: 30px;
+            width: 255px;
+            height: 50px;
+            background-color: #F5F7FA;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img {
+                position: absolute;
+                left: 25px;
+            }
+            input {
+                all: unset;
+                margin-left: 15px;
+            }
+            input::placeholder {
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18.15px;
+                color: #8BA3CB;
+                background-color: #F5F7FA;
+            }
+            input:focus {
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18.15px;
+                color: #8BA3CB;
+                background-color: #F5F7FA;
+                margin-left: 25px;
+            }
+        }
+        &__settings {
+            margin-right: 30px;
+            height: 50px;
+            width: 50px;
+            background-color: #F5F7FA;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__ring {
+            margin-right: 35px;
+            height: 50px;
+            width: 50px;
+            background-color: #F5F7FA;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__divider {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #E6EFF5;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.hamburger {
+    height: 20px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #343C6A;
+        border-radius: 20px;
+    }
+}
